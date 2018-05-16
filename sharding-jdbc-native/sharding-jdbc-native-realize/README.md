@@ -1,0 +1,22 @@
+# 作者简介: 
+Adam Lu(刘亚壮)，高级软件架构师，Java编程专家，开源分布式消息引擎Mysum发起者、首席架构师及开发者，Android开源消息组件Android-MQ独立作者，国内知名开源分布式数据库中间件Mycat核心架构师、开发者，精通Java, C, C++, Python, Hadoop大数据生态体系，熟悉MySQL、Redis内核，Android底层架构。多年来致力于分布式系统架构、微服务、分布式数据库、大数据技术的研究，曾主导过众多分布式系统、微服务及大数据项目的架构设计、研发和实施落地。在高并发、高可用、高可扩展性、高可维护性和大数据等领域拥有丰富的经验。对Hadoop、Spark、Storm等大数据框架源码进行过深度分析并具有丰富的实战经验。
+
+# 作者联系方式
+QQ：2711098650
+
+# 项目简述
+sharding-jdbc-native-realize：以原生Java的形式来验证sharding-jdbc的各种功能实例
+
+# 详细描述
+*	org.sharding.jdbc.demo.realize.utils 包下为整个工程使用的工具类
+*	org.sharding.jdbc.demo.realize.sd.* 包下为实现sharding-jdbc的分库分表能力，sd表示shard database
+
+
+#	org.sharding.jdbc.demo.realize.sd.* 包下的业务
+org.sharding.jdbc.demo.realize.sd.* 包下的业务主要是实现订单表t_order_0、t_order_1，订单详情表：t_order_item_0、t_order_item_1的分库分表能力；
+其中分库规则是按照数据表中的user_id对2取模；分表操作是按照数据表中的order_id对2取模；同时实现了对数据库的增删改查操作；
+
+
+
+
+
