@@ -1,4 +1,4 @@
-package org.sharding.jdbc.demo.realize.sd.dao;
+package org.sharding.jdbc.demo.realize.dao;
 
 import java.util.List;
 

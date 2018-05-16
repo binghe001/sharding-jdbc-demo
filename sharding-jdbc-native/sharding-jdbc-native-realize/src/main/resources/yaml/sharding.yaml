@@ -1,0 +1,33 @@
+dataSources:
+  ds_0: !!org.apache.commons.dbcp.BasicDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ds_0?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true
+    username: root
+    password: root
+  ds_1: !!org.apache.commons.dbcp.BasicDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ds_1?useUnicode=true&characterEncoding=UTF-8&useOldAliasMetadataBehavior=true
+    username: root
+    password: root
+
+tables:
+  t_order: 
+    actualDataNodes: ds_${0..1}.t_order_${0..1}
+    databaseStrategy: 
+      inline:
+        shardingColumn: user_id
+        algorithmInlineExpression: ds_$_${user_id % 2}
+    tableStrategy: 
+      inline:
+        shardingColumn: order_id
+        algorithmInlineExpression: t_order_${order_id % 2}
+  t_order_item: 
+    actualDataNodes: ds_${0..1}.t_order_item_${0..1}
+    databaseStrategy: 
+      inline:
+        shardingColumn: user_id
+        algorithmInlineExpression: ds_$_${user_id % 2}
+    tableStrategy: 
+      inline:
+        shardingColumn: order_id
+        algorithmInlineExpression: t_order_item_${order_id % 2}

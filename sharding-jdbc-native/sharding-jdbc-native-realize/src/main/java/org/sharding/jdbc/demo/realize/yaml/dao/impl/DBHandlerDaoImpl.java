@@ -1,4 +1,4 @@
-package org.sharding.jdbc.demo.realize.sd.dao.impl;
+package org.sharding.jdbc.demo.realize.yaml.dao.impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,7 +9,7 @@ import java.util.List;
 import org.sharding.jdbc.demo.realize.dao.DBHandlerDao;
 import org.sharding.jdbc.demo.realize.entity.Order;
 import org.sharding.jdbc.demo.realize.entity.OrderItem;
-import org.sharding.jdbc.demo.realize.sd.datasource.DataSourceWrapper;
+import org.sharding.jdbc.demo.realize.yaml.datasource.DataDourceWrapper;
 
 /**
  * 增删改查具体实现
@@ -21,7 +21,7 @@ public class DBHandlerDaoImpl implements DBHandlerDao {
 	
 	public DBHandlerDaoImpl() throws Exception{
 		super();
-		this.conn = DataSourceWrapper.getDataSource().getConnection();
+		this.conn = DataDourceWrapper.getDataSource().getConnection();
 	}
 
 	@Override
