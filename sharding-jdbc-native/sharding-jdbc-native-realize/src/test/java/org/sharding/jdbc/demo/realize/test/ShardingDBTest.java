@@ -4,10 +4,10 @@ import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.sharding.jdbc.demo.realize.entity.Order;
+import org.sharding.jdbc.demo.realize.entity.OrderItem;
 import org.sharding.jdbc.demo.realize.sd.dao.DBHandlerDao;
 import org.sharding.jdbc.demo.realize.sd.dao.impl.DBHandlerDaoImpl;
-import org.sharding.jdbc.demo.realize.sd.entity.Order;
-import org.sharding.jdbc.demo.realize.sd.entity.OrderItem;
 
 /**
  * 测试Sharding-jdbc的分库分表能力

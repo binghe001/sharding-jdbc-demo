@@ -1,4 +1,4 @@
-package org.sharding.jdbc.demo.realize.sd.entity;
+package org.sharding.jdbc.demo.realize.entity;
 
 import java.io.Serializable;
 

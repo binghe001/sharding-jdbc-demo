@@ -2,8 +2,8 @@ package org.sharding.jdbc.demo.realize.sd.dao;
 
 import java.util.List;
 
-import org.sharding.jdbc.demo.realize.sd.entity.Order;
-import org.sharding.jdbc.demo.realize.sd.entity.OrderItem;
+import org.sharding.jdbc.demo.realize.entity.Order;
+import org.sharding.jdbc.demo.realize.entity.OrderItem;
 
 /**
  * 实现数据增删改查接口
