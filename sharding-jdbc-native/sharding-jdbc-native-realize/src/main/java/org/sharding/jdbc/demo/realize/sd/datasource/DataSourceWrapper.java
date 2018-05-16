@@ -22,6 +22,11 @@ import io.shardingjdbc.core.api.config.strategy.InlineShardingStrategyConfigurat
  */
 public class DataSourceWrapper {
 	
+	/**
+	 * 整合sharding-jdbc获取数据源
+	 * @return
+	 * @throws Exception
+	 */
 	public static DataSource getDataSource() throws Exception{
 		//存储真实数据源
 		Map<String, DataSource> dataSourceMap = new HashMap<String, DataSource>();
