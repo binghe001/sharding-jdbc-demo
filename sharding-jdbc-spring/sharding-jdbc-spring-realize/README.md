@@ -5,19 +5,17 @@ Adam Lu(刘亚壮)，高级软件架构师，Java编程专家，开源分布式�
 QQ：2711098650
 
 # 项目简述
-sharding-jdbc-native-realize：以原生Java的形式来验证sharding-jdbc的各种功能实例
+sharding-jdbc-spring-realize：sharding-jdbc整合Spring实现各项功能
 
-# 详细描述
-*	org.sharding.jdbc.demo.realize.utils 包下为整个工程使用的工具类
-*	org.sharding.jdbc.demo.realize.sd.* 包下为实现sharding-jdbc的分库分表能力，sd表示shard database
+
 
 
 #	org.sharding.jdbc.demo.realize.sd.* 包下的业务
-org.sharding.jdbc.demo.realize.sd.* 包下的业务主要是实现订单表t_order_0、t_order_1，订单详情表：t_order_item_0、t_order_item_1的分库分表能力；
+io.sharding.jdbc.spring.realize.* 包下的业务主要是实现订单表t_order_0、t_order_1，订单详情表：t_order_item_0、t_order_item_1的分库分表能力；
 其中分库规则是按照数据表中的user_id对2取模；分表操作是按照数据表中的order_id对2取模；同时实现了对数据库的增删改查操作；
 
 #	项目测试入口
-org.sharding.jdbc.demo.realize.sd.test.ShardingDBTest
+io.sharding.jdbc.spring.realize.ShardingDBTest
 
 
 
