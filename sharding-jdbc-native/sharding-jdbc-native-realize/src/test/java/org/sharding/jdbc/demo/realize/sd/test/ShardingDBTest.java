@@ -1,4 +1,4 @@
-package org.sharding.jdbc.demo.realize.test;
+package org.sharding.jdbc.demo.realize.sd.test;
 
 import java.util.List;
 
