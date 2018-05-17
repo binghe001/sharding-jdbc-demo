@@ -72,6 +72,7 @@
   <modules>
     <module>sharding-jdbc-spring</module>
     <module>sharding-jdbc-native</module>
+    <module>sharding-jdbc-springboot</module>
   </modules>
   
   

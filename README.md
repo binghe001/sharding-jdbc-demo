@@ -14,6 +14,7 @@ sharding-jdbc的各种实现示例，持续更新中。。。
 ## sharding-jdbc-demo 架构
 *	sharding-jdbc-native：原生Java开发的sharding-jdbc-demo
 *	sharding-jdbc-spring：整合Spring开发的sharding-jdbc-demo
+*	sharding-jdbc-springboot：整合SpringBoot开发的sharding-jdbc-demo
 
 ### sharding-jdbc-native 架构
 *	sharding-jdbc-native-realize：Java原生实现sharding-jdbc的分库分表操作
@@ -23,5 +24,6 @@ sharding-jdbc的各种实现示例，持续更新中。。。
 *	sharding-jdbc-spring-realize：sharding-jdbc整合Spring实现分库分表操作
 *	sharding-jdbc-spring-wr： sharding-jdbc整合Spring实现分库分表+读写分离操作
 
-
+### sharding-jdbc-springboot 架构
+*	sharding-jdbc-springboot-realize：SpringBoot下的sharding-jdbc配置
 
