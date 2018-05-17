@@ -5,22 +5,14 @@ Adam Lu(刘亚壮)，高级软件架构师，Java编程专家，开源分布式�
 QQ：2711098650
 
 # 项目简述
-sharding-jdbc的各种实现示例，持续更新中。。。
+sharding-jdbc-native-wr：以原生Java的形式实现了Sharding-JDBC的分库分表和读写分离能力
 
-# 项目结构简述
-## 整体架构
-*	sharding-jdbc-demo：sharding-jdbc-demo总体结构
+# 详细描述
+io.sharding.jdbc.demo.wr.ds.DataSourceWrapper实现了只读写分离和分库分表+读写分离的数据源构建
 
-## sharding-jdbc-demo 架构
-*	sharding-jdbc-native：原生Java开发的sharding-jdbc-demo
-*	sharding-jdbc-spring：整合Spring开发的sharding-jdbc-demo
+#	项目测试入口
+io.sharding.jdbc.demo.wr.ShardingDBTest
 
-### sharding-jdbc-native 架构
-*	sharding-jdbc-native-realize：Java原生实现sharding-jdbc的分库分表操作
-*	sharding-jdbc-native-wr：Java医生实现sharding-jdbc的读写分离和分库分表+读写分离操作
-
-###	sharding-jdbc-spring 架构
-*	sharding-jdbc-spring-realize：sharding-jdbc整合Spring实现分库分表操作
 
 
 

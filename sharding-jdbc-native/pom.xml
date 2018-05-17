@@ -14,5 +14,6 @@
   </properties>
   <modules>
     <module>sharding-jdbc-native-realize</module>
+    <module>sharding-jdbc-native-wr</module>
   </modules>
 </project>
