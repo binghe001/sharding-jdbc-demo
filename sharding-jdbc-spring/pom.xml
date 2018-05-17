@@ -72,5 +72,6 @@
   
   <modules>
     <module>sharding-jdbc-spring-realize</module>
+    <module>sharding-jdbc-spring-wr</module>
   </modules>
 </project>
