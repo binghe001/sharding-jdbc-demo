@@ -10,6 +10,7 @@ import io.sharding.jdbc.demo.dao.DBHandlerDao;
 import io.sharding.jdbc.demo.entity.Order;
 import io.sharding.jdbc.demo.entity.OrderItem;
 import io.sharding.jdbc.demo.wr.ds.DataSourceWrapper;
+import io.shardingjdbc.core.api.HintManager;
 
 /**
  * 增删改查具体实现
@@ -21,6 +22,9 @@ public class DBHandlerDaoImpl implements DBHandlerDao {
 	
 	public DBHandlerDaoImpl() throws Exception{
 		super();
+		//HintManager强制路由到主库，没有设置则会路由到相应的从库
+		HintManager hintManager = HintManager.getInstance();
+		hintManager.setMasterRouteOnly();
 		this.conn = DataSourceWrapper.getShardWRDataSource().getConnection();
 	}
 
